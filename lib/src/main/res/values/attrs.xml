@@ -5,6 +5,7 @@
         <attr name="maxProgress" format="integer"/>
         <attr name="radius" format="dimension"/>
         <attr name="strokeWidth" format="dimension"/>
+        <attr name="roundRadius" format="dimension"/>
     </declare-styleable>
 
 </resources>
