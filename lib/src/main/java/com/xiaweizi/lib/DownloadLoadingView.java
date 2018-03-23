@@ -19,7 +19,7 @@ import android.view.View;
  *     class  : com.xiaweizi.lib.DownloadLoadingView
  *     e-mail : 1012126908@qq.com
  *     time   : 2018/03/22
- *     desc   :
+ *     desc   : 自定义下载 view
  * </pre>
  */
 
@@ -53,12 +53,12 @@ public class DownloadLoadingView extends View {
 
     public DownloadLoadingView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CustomView);
-        mRadius = typedArray.getDimension(R.styleable.CustomView_radius, RADIUS_DEFAULT);
-        mStrokeWidth = typedArray.getDimension(R.styleable.CustomView_strokeWidth, STROKE_WIDTH_DEFAULT);
-        mMaxProgress = typedArray.getInteger(R.styleable.CustomView_maxProgress, MAX_PROGRESS_DEFAULT);
-        mRoundRadius = typedArray.getDimension(R.styleable.CustomView_roundRadius, ROUND_RADIUS_DEFAULT);
-        mBackgroundColor = typedArray.getColor(R.styleable.CustomView_backgroundColor, getResources().getColor(R.color.bg_default));
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DownloadLoadingView);
+        mRadius = typedArray.getDimension(R.styleable.DownloadLoadingView_radius, RADIUS_DEFAULT);
+        mStrokeWidth = typedArray.getDimension(R.styleable.DownloadLoadingView_strokeWidth, STROKE_WIDTH_DEFAULT);
+        mMaxProgress = typedArray.getInteger(R.styleable.DownloadLoadingView_maxProgress, MAX_PROGRESS_DEFAULT);
+        mRoundRadius = typedArray.getDimension(R.styleable.DownloadLoadingView_roundRadius, ROUND_RADIUS_DEFAULT);
+        mBackgroundColor = typedArray.getColor(R.styleable.DownloadLoadingView_backgroundColor, getResources().getColor(R.color.bg_default));
         Log.i(TAG, "radius:" + mRadius);
         typedArray.recycle();
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);//关闭硬件加速

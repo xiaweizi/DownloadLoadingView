@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CustomView">
+    <declare-styleable name="DownloadLoadingView">
         <attr name="maxProgress" format="integer"/>
         <attr name="radius" format="dimension"/>
         <attr name="strokeWidth" format="dimension"/>
