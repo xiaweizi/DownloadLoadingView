@@ -6,6 +6,7 @@
         <attr name="radius" format="dimension"/>
         <attr name="strokeWidth" format="dimension"/>
         <attr name="roundRadius" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
     </declare-styleable>
 
 </resources>
