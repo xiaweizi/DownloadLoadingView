@@ -89,6 +89,14 @@ public class DownloadLoadingView extends View {
         paint.setXfermode(null);
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int width = getMeasuredWidth();
+        int height = getMeasuredHeight();
+        setMeasuredDimension(width > height ? height : width, width > height ? height : width);
+    }
+
     /**
      * @param progress 设置进度
      */
